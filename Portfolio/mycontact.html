@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        /* Style inputs */
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        
+        input[type=submit] {
+            background-color: orange;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        /* Style the container/contact section */
+        
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 10px;
+            height: max-content;
+            width: max-content;
+            margin-left: 15%;
+        }
+        /* Create two columns that float next to eachother */
+        
+        .container.column {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+            margin-left: 70px;
+            border: 5px groove red;
+            align-items: center;
+            text-align: center;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* .h12 {
+            display: inline-block;
+        } */
+        
+        nav {
+            display: flex;
+            width: 84%;
+            margin: auto;
+            padding: 20px 0;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+        
+        .nav ul li:hover {
+            border: 5px solid black;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- nav -->
+
+
+    <div class="h12">
+        <nav>
+            <h2>PORTFOLIO</h2>
+            <ul>
+                <li><a href="khiladi.html" target="_self">HOME</a></li>
+                <li><a href="" target="_self">ABOUT</a></li>
+                <li><a href="#" target="_self">PORTFOLIO</a></li>
+                <li><a href="resume.html">EDUCATION</a></li>
+                <li><a href="mycontact.html">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- nav -->
+
+    <div class="container">
+
+        <div style="text-align:center">
+            <h2>Contact Me</h2>
+
+        </div>
+        <div class="row">
+
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Write message.." style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
